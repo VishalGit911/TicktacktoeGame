@@ -71,8 +71,7 @@ class _GameScreenState extends State<GameScreen> {
           board[2][0] == currentplayer) {
         winner = currentplayer;
         gameover = true;
-      }
-      else if (board[0][1] == currentplayer &&
+      } else if (board[0][1] == currentplayer &&
           board[1][1] == currentplayer &&
           board[2][1] == currentplayer) {
         winner = currentplayer;
@@ -174,7 +173,7 @@ class _GameScreenState extends State<GameScreen> {
                             child: Text(
                               board[row][col],
                               style: TextStyle(
-                                fontSize: 30,
+                                  fontSize: 30,
                                   fontWeight: FontWeight.w500,
                                   color: board[row][col] == "X"
                                       ? Colors.green
